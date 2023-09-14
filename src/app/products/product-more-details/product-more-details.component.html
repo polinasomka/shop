@@ -1,0 +1,15 @@
+<div class="main">
+    <div class="img">
+        <img src="{{products[i].api_featured_image}}" alt="">
+    </div>
+    <div class="text">
+        <div class="namePrice">
+            <h1>{{products[i].name}}</h1>
+            <h3>{{products[i].price | currency}}</h3>
+        </div>
+        <button (click) = "addToCart(products[i])">buy</button>
+        <div class="descr">
+            <p>{{products[i].description}}</p>
+        </div>
+    </div>
+</div>

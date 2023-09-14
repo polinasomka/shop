@@ -1,0 +1,61 @@
+<div class="sort">
+    <div class="sortList">
+        <div>
+            <p>sort by:</p>
+        </div>
+        <div>
+            <ul>
+                <li  *ngFor = "let item of sortList; let i = index"[ngStyle] ="{'color': i === choosen ? '#00584b' : 'initial', 'text-decoration': i === choosen ? 'underline' : 'none' }" (click)="sortBy(i)">{{item.title}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="category">
+        <p (mouseover) ="showCategoryMenu()" >choose category</p>
+        <div class = "menu" *ngIf="categoryMenu">
+            <p *ngFor = "let category of categoriesNoRepeat" (click)="sortByCategory(category)">{{category}}</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div *ngIf="sort1" class="products">
+    <div class="product" *ngFor = "let product of products.slice(0,40); let i = index" (click) = "showMoreDetails(i)" [ngClass]="{ 'clicked': i === selectedDiv }">
+        <a routerLink="/products/{{product.id}}">
+        <div class="img">
+           
+            <img src="{{product.api_featured_image}}" alt="">
+        </div>
+        <h3>{{product.name}} {{product.price | currency}}</h3>
+    </a>
+        <button (click) = "addToCart(product)">buy</button>
+
+    </div>
+</div>
+
+
+
+<div *ngIf="sort2" class="products">
+    <div class="product" *ngFor = "let product of sortedProducts.slice(0,40); let i = index">
+        <a routerLink="/products/{{product.id}}">
+        <div class="img">
+            <img src="{{product.api_featured_image}}" alt="">
+        </div>
+        <h3>{{product.name}} {{product.price | currency}}</h3>
+    </a>
+        <button (click) = "addToCart(product)">buy</button>
+    </div>
+</div>
+
+<div *ngIf="sort3" class="products">
+    <div class="product" *ngFor = "let product of sortedProducts.reverse().slice(0,40); let i = index">
+        <a routerLink="/products/{{product.id}}">
+        <div class="img">
+            <img src="{{product.api_featured_image}}" alt="">
+        </div>
+        <h3>{{product.name}} {{product.price | currency}}</h3>
+    </a>
+        <button (click) = "addToCart(product)">buy</button>
+    </div>
+</div>

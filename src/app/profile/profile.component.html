@@ -1,0 +1,16 @@
+<div class="main">
+    <h1>Log in</h1>
+    <div class="input">
+        <p>name</p>
+        <input type="text" title="name" [(ngModel)]="customer.name">
+    </div>
+    <div class="input">
+        <p>surname</p>
+        <input type="text" title="surname" [(ngModel)]="customer.surname">
+    </div>
+    <div class="input">
+        <p>email</p>
+        <input type="email" title="email" [(ngModel)]="customer.email">
+    </div>
+    <button (click) = "placeOrder()" (click) = "resetCart()">submit</button>
+</div>

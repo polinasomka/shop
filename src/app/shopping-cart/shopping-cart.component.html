@@ -1,0 +1,29 @@
+
+<div class = "main" *ngFor = "let product of cart">
+    <div class="img">
+        <img src="{{product.api_featured_image}}" alt="">
+    </div>
+    <div class = "info">
+        <h3>{{product.name}}</h3>
+        <h3>{{product.price * product.quantity| currency}}</h3>
+    </div>
+    <div class="change">
+        <div (click) = "removeItem(product)" class="bin">
+            <img src="assets/noun-recycle-bin-101467.png" alt="">
+        </div>
+        <div class="quantity">
+            <div (click) = "substract(product)"><p>-</p></div>
+            <div><input type="number" [(ngModel)]="product.quantity"></div>
+            <div (click) = "add(product)"><p>+</p></div>
+        </div>
+    </div>
+</div>
+<div class="total">
+ <h1>Total:</h1>
+ <div>
+    <h3>{{getTotalPrice() | currency}}</h3>
+    <a routerLink = "/profile" routerLinkActive="active">
+    <button>buy</button>
+    </a>
+ </div>
+</div>

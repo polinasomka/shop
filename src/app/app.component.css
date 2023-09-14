@@ -1,0 +1,80 @@
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 41px;
+    max-width: 1440px;
+    justify-self: center;
+}
+
+p{
+    font-family: 'Abhaya Libre', serif;
+    font-size: 20px;
+    
+}
+
+nav{
+    
+    font-size: 16px;
+    width: 736px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+li{
+    list-style-type: none;
+}
+
+.images{
+    display: flex;
+    width: 152px;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #7CCDE1;
+    border-radius: 15px;
+    margin-top: 50px;
+    
+}
+
+
+footer .brand{
+    max-width: 300px;
+    padding: 35px;
+}
+
+footer .navigation{
+    margin: 0px;
+    max-width: 300px;
+    margin: 0px 40px;
+    position: relative;
+}
+
+footer .navigation .about{
+    position: absolute;
+    left: -40px;
+}
+
+footer .navigation .privacy{
+    position: absolute;
+    left: 80px;
+    top: 70px;
+}
+
+footer .navigation #privacy{
+   position: absolute;
+   left: 120px;}
+
+footer .contact{
+    margin-left: 70px;
+}
+
+.clicked{
+    width: 500px;
+}

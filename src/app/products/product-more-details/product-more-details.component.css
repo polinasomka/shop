@@ -1,0 +1,21 @@
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.img img{
+    max-width: 400px;
+    max-height: 400px;
+    justify-self: center;
+}
+
+.img{
+    border: 2px dotted gray;
+
+}
+
+.text{
+    max-width: 500px;
+}

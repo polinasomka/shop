@@ -1,0 +1,186 @@
+.first{
+    display: grid;
+    margin-top: 120px;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1440px;
+    /* justify-content: space-between; */
+}
+.aboutFound{
+    max-width: 486px;
+}
+.pinkDiv{
+    font-size: 15px;
+    background-color: #FFCCCC;
+    height: 50px;
+    max-width: 216px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+.nameDiscription{
+    max-width: 486px;
+    margin-top: 27px;
+}
+.nameDiscription h1{
+    font-weight: 800;
+    font-size: 100px;
+    margin: 0px;
+}
+.nameDiscription div{
+    max-width: 342px;
+}
+.nameDiscription p{
+    color: #797979;
+    font-size: 20px;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+}
+
+.btn button{
+    width: 175px;
+    height: 60px;
+    background-color: #B91122;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+.btn p{
+    font-size: 18px;
+    color: #797979;
+}
+
+.pic{
+    margin: 0px 35px;
+}
+
+.price{
+    height: 346px;
+    width: 244px;
+    background-color: #FFF8E7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    margin-top: 87px;
+    margin-left: 50px;
+}
+
+.price div{
+    margin-left: 20px;
+    /* margin-top: ; */
+}
+
+.price div p{
+    font-size: 18px;
+    /* margin-bottom: 19px; */
+}
+
+.price div h1{
+    font-size: 43px;
+}
+
+.price div .size{
+    font-family: 'Abhaya Libre', serif;
+    font-size: 20px;
+}
+.price .btns .left{
+    width: 52px;
+    height: 41px;
+    border-bottom-left-radius: 23px;
+    background-color: #FFF8E7;
+    border-color: #666666;
+    border: 1px solid;
+}
+
+.price .btns .right{
+    width: 52px;
+    height: 41px;
+    border-bottom-right-radius: 23px;
+    background-color: #FFF8E7;
+    border-color: #666666;
+    border: 1px solid;
+}
+
+.second{
+    display: grid;
+    /* justify-content: center; */
+    grid-template-columns: 1fr;
+    /* flex-direction: column; */
+}
+
+.second img{
+    max-height: 460px;
+}
+
+.second .bestPrd{
+    text-align: center;
+    max-width: 750px;
+    justify-self: center;
+}
+
+.second .prd1, .prd2{
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    padding: 25px;
+}
+
+.second .left{
+    margin-right: 50px;
+}
+
+.second h1{
+    font-size: 50px;
+    font-weight: 800;
+    /* font-family: ; */
+}
+.second p{
+    font-size: 20px;
+    color: #797979;
+}
+
+.second b{
+    color: black;
+}
+
+.third {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: center;
+}
+.third h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.third .questions{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.third .question{
+    border: 1px solid #666666;
+    margin: 10px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    height: fit-content;
+}
+
+.third .img{
+    text-align: center;
+    font-size: 50px;
+}
+
+.third .img p{
+    margin: 0px;
+
+}

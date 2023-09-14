@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin-left: 78px;
+    margin-right: 76px;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 700;
+
+}
