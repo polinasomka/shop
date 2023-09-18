@@ -9,3 +9,7 @@ h1{
     font-weight: 700;
 
 }
+
+a, li, img{
+    cursor: pointer;
+}
