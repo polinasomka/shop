@@ -14,7 +14,7 @@ export class AddToCartService {
   }
 
   addToCart(product: any){
-    this.cart.forEach(product => product.quantity = 1)
+    this.cart.forEach(product => product.quantity = product.quantity++)
     console.log(product.quantity)
     
     const existingItem = this.cart.find(item => item.id === product.id);
